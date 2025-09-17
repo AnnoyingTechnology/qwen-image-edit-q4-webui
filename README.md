@@ -30,8 +30,13 @@ On linux you may also add `pip install flash-attn`
 
 # Performance 
 
-Expect 5min generation time for 1024x1024 and 50 steps on a RTX3090.
-You can get down to 50sec/image for 1024 and 15 steps (absolutely decent quality) on an RTX4090.
+For a 1024x1024px image, 10 steps cost you : 
+- 65sec on an RTX 3090
+- 36sec on an RTX 4090
+
+Authors of the model recommend 50 steps, but the model behaves just fine in the 15-25 range too.
+
+Real world generation times are from 1min to 3min.
 
 # Disclaimer
 
