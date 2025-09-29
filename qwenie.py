@@ -83,7 +83,7 @@ def load_pipeline():
     # Default to the official 2509 bf16 diffusers repo. Override with MODEL_ID to point at a 4-bit pack
     # (e.g. pre-2509: 'ovedrive/qwen-image-edit-4bit'). When a 2509 Q4 safetensors pack exists,
     # set MODEL_ID to that repo id and restart.
-    model_id = os.environ.get("MODEL_ID", "Qwen/Qwen-Image-Edit-2509")
+    model_id = os.environ.get("MODEL_ID", "ovedrive/Qwen-Image-Edit-2509-4bit")
 
     # Qwen-Image-Edit-Plus supports multi-image input
     pipeline = QwenImageEditPlusPipeline.from_pretrained(model_id, torch_dtype=torch.bfloat16)
