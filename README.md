@@ -24,7 +24,7 @@ This has been tested September 2025 on Linux Debian SID (CUDA 12.4) and Windows 
 
 - `conda create -y -n qwenie python=3.11`
 - `conda install -y torchvision pytorch pytorch-cuda=12.4 -c pytorch -c nvidia`
-- `pip install --upgrade "git+https://github.com/huggingface/diffusers" transformers accelerate bitsandbytes safetensors pillow`
+- `pip install --upgrade "git+https://github.com/huggingface/diffusers" transformers accelerate bitsandbytes safetensors pillow flask`
 
 On linux you may also add `pip install flash-attn`
 
